@@ -10,11 +10,11 @@ ID #  Location (File and Line Number)	 Problem Description    Problem (Category 
 
  5    Alcohol.java lines 1-11	         Lazy class		         CS (LOW)      
 
- FD   Cart1.class                        Gives incorrect pricing	 FD (BR)
-				         for produce products
+ FD   Cart1.class                        No discount on produce	         FD (BR)
+				         
 
- 4C   Cart.java line 37	                 Method name not in correct      CG (LOW)
-				         format
+ 4C   Cart.java line 37	                 Incorrect method name format    CG (LOW)
+				         
 
  3    Cart.java line 83                  Switch statement                CS (MJ)
 
