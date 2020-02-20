@@ -65,7 +65,7 @@ public class Cart {
                 frozenFoodCounter++;
             }
             else if (cart.get(i).getClass().toString() == FrozenFood.class.toString())
-                dairyCounter++;
+                
 
             if (alcoholCounter >= 1 && frozenFoodCounter >= 1) {
                  costAfterSavings = costAfterSavings + 3;
