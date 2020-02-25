@@ -85,10 +85,10 @@ public class Cart {
             	frozenFoodCounter++;
             }
             //SER316-START 
-            //Changed equality signs to .equals to compare Strings
-            else if (cart.get(i).getClass().toString().equals(FrozenFood.class.toString()))
-            //SER316-END    
-            	dairyCounter++;
+            //Commented out duplicate code and dairycounter because dairy has no deals
+            //else if (cart.get(i).getClass().toString().equals(FrozenFood.class.toString()))  
+            	//dairyCounter++;
+            //SER316-END  
 
             if (alcoholCounter >= 1 && frozenFoodCounter >= 1) {
                  costAfterSavings = costAfterSavings + 3;
