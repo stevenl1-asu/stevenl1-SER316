@@ -7,7 +7,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class WhiteBoxGiven {
+public class WhiteBoxGiven { 
 
     Cart cart;
 
@@ -24,5 +24,4 @@ public class WhiteBoxGiven {
     public void getTax() {
         assertEquals(4.0, cart.getTax(50, "AZ"), .01);
     }
-
 }

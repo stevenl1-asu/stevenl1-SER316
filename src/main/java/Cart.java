@@ -28,7 +28,18 @@ public class Cart {
      * @throws UnderAgeException
      */
     public double calcCost() throws UnderAgeException {
-        return 0; //implement me, will be important for assignment 4 (nothing to do here for assignment 3)
+    	double price = 0.0;
+    	double tax = 0.0;
+    	double finalTotal = 0.0;
+    	
+    	for(int i = 0; i < cart.size(); i++) {
+    		price += cart.get(i).getCost(); 
+    		    		
+    	}
+    	tax = getTax(price, "AZ");
+    	finalTotal = tax + price;
+    	
+        return finalTotal; //implement me, will be important for assignment 4 (nothing to do here for assignment 3)
     }
 
     // calculates how much was saved in the current shopping cart based on the deals, returns the saved amount
@@ -40,14 +51,17 @@ public class Cart {
 
         double produce_counter = 0;
         int alcoholCounter = 0;
-        int frozenFoodCounter = 0;
+        int frozenFoodCounter = 0; 
         int dairyCounter = 0;
-
+ 
         for(int i = 0; i < cart.size(); i++) {
             subTotal += cart.get(i).getCost();
             costAfterSavings =costAfterSavings+cart.get(i).getCost();
-
-            if (cart.get(i).getClass().toString() == Produce.class.toString()) {
+            
+            //SER316-START 
+            //Changed equality signs to .equals to compare Strings
+            if (cart.get(i).getClass().toString().equals(Produce.class.toString())) {
+            //SER316-END
                 produce_counter++;
 
                 if (produce_counter >= 3) {
@@ -55,17 +69,26 @@ public class Cart {
                     produce_counter = 0;
                 }
             }
-            else if (cart.get(i).getClass().toString()==Alcohol.class.toString()) {
+            //SER316-START 
+            //Changed equality signs to .equals to compare Strings
+            else if (cart.get(i).getClass().toString().equals(Alcohol.class.toString())) {
+            //SER316-END
                 alcoholCounter++;
                 if (userAge < 21) {
                     throw new UnderAgeException("The User is not of age to purchase alcohol!");
                 }
             }
-            else if (cart.get(i).getClass().toString() == FrozenFood.class.toString()) {
-                frozenFoodCounter++;
+            //SER316-START 
+            //Changed equality signs to .equals to compare Strings
+            else if (cart.get(i).getClass().toString().equals(FrozenFood.class.toString())) {
+            //SER316-END    
+            	frozenFoodCounter++;
             }
-            else if (cart.get(i).getClass().toString() == FrozenFood.class.toString())
-                dairyCounter++;
+            //SER316-START 
+            //Changed equality signs to .equals to compare Strings
+            else if (cart.get(i).getClass().toString().equals(FrozenFood.class.toString()))
+            //SER316-END    
+            	dairyCounter++;
 
             if (alcoholCounter >= 1 && frozenFoodCounter >= 1) {
                  costAfterSavings = costAfterSavings + 3;
