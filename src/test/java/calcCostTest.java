@@ -29,7 +29,7 @@ public class calcCostTest {
     public static Collection<Object[]> cartClassUnderTest() {
         Object[][] classes = {
             {Cart.class}
-           
+            
         };
         return Arrays.asList(classes);
     }

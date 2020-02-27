@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test.java.calcCostTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2020-02-27T02:50:05" hostname="LAPTOP-SRH1PEK6" time="0.01">
+  <properties/>
+  <testcase name="calcCostCart1[0]" classname="test.java.calcCostTest" time="0.002"/>
+  <testcase name="caclCostCart10[0]" classname="test.java.calcCostTest" time="0.001"/>
+  <testcase name="caclCostCart11[0]" classname="test.java.calcCostTest" time="0.001"/>
+  <testcase name="caclCostCart12[0]" classname="test.java.calcCostTest" time="0.0"/>
+  <testcase name="caclCostCart13[0]" classname="test.java.calcCostTest" time="0.0"/>
+  <testcase name="caclCostCart14[0]" classname="test.java.calcCostTest" time="0.0"/>
+  <testcase name="caclCostCart2[0]" classname="test.java.calcCostTest" time="0.0"/>
+  <testcase name="caclCostCart3[0]" classname="test.java.calcCostTest" time="0.001"/>
+  <testcase name="caclCostCart4[0]" classname="test.java.calcCostTest" time="0.0"/>
+  <testcase name="caclCostCart5[0]" classname="test.java.calcCostTest" time="0.001"/>
+  <testcase name="caclCostCart6[0]" classname="test.java.calcCostTest" time="0.0"/>
+  <testcase name="caclCostCart7[0]" classname="test.java.calcCostTest" time="0.0"/>
+  <testcase name="caclCostCart8[0]" classname="test.java.calcCostTest" time="0.0"/>
+  <testcase name="caclCostCart9[0]" classname="test.java.calcCostTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

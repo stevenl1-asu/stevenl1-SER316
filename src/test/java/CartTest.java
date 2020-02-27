@@ -25,7 +25,7 @@ public class CartTest {
 	Produce prod;
 	
 	Cart cart1, cart2, cart3, cart4, cart5, cart6, cart7, cart8, cart9, cart10, cart11, cart12,
-    cart13, cart14, cart15, cart16, cart17;
+    cart13, cart14, cart15, cart16, cart17, cart18;
  
     double cart1Expected, cart2Expected, cart3Expected, cart4Expected, cart5Expected,
     cart6Expected, cart7Expected, cart8Expected, cart9Expected, cart10Expected, cart11Expected,
@@ -64,6 +64,16 @@ public class CartTest {
         }
       
         cart2Expected = 8.64;
+        
+        cart3 = new Cart(22);
+        for(int i = 0; i < 5; i++) {
+        	cart3.addItem(new Alcohol());
+        }
+        for(int i = 0; i < 3; i++) {
+        	cart3.addItem(new FrozenFood());
+        }
+      
+        cart3Expected = 49.68;
         
         cart4 = new Cart(21);
         for(int i = 0; i < 1; i++) {
@@ -121,6 +131,14 @@ public class CartTest {
         cart13 = new Cart(30);
         
         cart13Expected = 0.0;
+        
+        // cart created with an age 5 shopper
+        cart14 = new Cart(5);
+        for(int i = 0; i < 1; i++) {
+        	cart14.addItem(new Produce());
+        }
+       
+        cart14Expected = 2.16;
 
                 
         cart15 = new Cart(10);
@@ -136,7 +154,12 @@ public class CartTest {
         	cart17.addItem(new FrozenFood());
         	cart17.addItem(new Dairy());
         }
-     
+        
+        cart18 = new Cart(21);
+        for(int i = 0; i < 4; i++) {
+        	cart18.addItem(new Produce());
+        }
+        
     }
 
     @After
@@ -254,6 +277,12 @@ public class CartTest {
     }
 
     @Test
+    public void caclCostCart3() throws UnderAgeException {
+    	double amount = cart3.calcCost();
+    	assertEquals(cart3Expected, amount, .01);
+    }
+    
+    @Test
     public void caclCostCart4() throws UnderAgeException {
     	double amount = cart4.calcCost();
     	assertEquals(cart4Expected, amount, .01);
@@ -297,8 +326,8 @@ public class CartTest {
     
     @Test
     public void calcCostCart14() throws UnderAgeException {
-        double amount = cart1.calcCost();
-        assertNotEquals(cart2Expected, amount, .01);
+        double amount = cart14.calcCost();
+        assertEquals(cart14Expected, amount, .01);
     }
     
     @Test
@@ -314,9 +343,9 @@ public class CartTest {
     }
     
     @Test
-    public void caclCostCart17() throws UnderAgeException {
-    	double amount = cart8.calcCost();
-    	assertNotEquals(cart1Expected, amount, .01);
+    public void caclCostCart18() throws UnderAgeException {
+    	double amount = cart18.calcCost();
+    	assertEquals(7.56, amount, .01);
     }
 
 }
