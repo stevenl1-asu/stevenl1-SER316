@@ -104,7 +104,7 @@ public class Cart {
                     throw new UnderAgeException("The User is not of age to purchase alcohol!");
                 }
             }
-<<<<<<< HEAD
+
             //SER316-START 
             //Changed equality signs to .equals to compare Strings
             else if (cart.get(i).getClass().toString().equals(FrozenFood.class.toString())) {
@@ -116,11 +116,11 @@ public class Cart {
             //else if (cart.get(i).getClass().toString().equals(FrozenFood.class.toString()))  
             	//dairyCounter++;
             //SER316-END  
-=======
+
             else if (cart.get(i).getClass().toString() == FrozenFood.class.toString()) {
                 frozenFoodCounter++;
             }   
->>>>>>> Review
+
 
             if (alcoholCounter >= 1 && frozenFoodCounter >= 1) {
                  costAfterSavings = costAfterSavings + 3;

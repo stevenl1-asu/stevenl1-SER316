@@ -168,37 +168,37 @@ public class CartTest {
     
     @Test
     public void amountSaved() throws UnderAgeException {
-    	double amount = cart15.Amount_saved();
+    	double amount = cart15.amountSaved();
         assertEquals(0.0, amount, .01);
     }
   
     @Test
     public void amountSaved2() throws UnderAgeException {
-    	double amount = cart16.Amount_saved();
+    	double amount = cart16.amountSaved();
         assertEquals(1.0, amount, .01);
     }
     
     @Test
     public void amountSaved3() throws UnderAgeException {
-    	double amount = cart5.Amount_saved();
+    	double amount = cart5.amountSaved();
         assertEquals(-6.0, amount, .01);
     }
     
     @Test
     public void amountSave4() throws UnderAgeException {
-    	double amount = cart17.Amount_saved();
+    	double amount = cart17.amountSaved();
         assertEquals(0.0, amount, .01);
     }
     
     @Test
     public void amountSave5() throws UnderAgeException {
-    	double amount = cart17.Amount_saved();
+    	double amount = cart17.amountSaved();
         assertNotNull(amount);
     }
     
     @Test
     public void amountSave6() throws UnderAgeException {
-    	double amount = cart17.Amount_saved();
+    	double amount = cart17.amountSaved();
         assertNotEquals(cart1Expected, amount);
     }
     
