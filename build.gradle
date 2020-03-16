@@ -25,7 +25,7 @@ dependencies {
 // Configure Checkstyle
 /////////////////////////////////////////////////////////////////////
   apply plugin: 'checkstyle'
-<<<<<<< HEAD
+
   checkstyle {
  //   // Keep checkstyle a little quieter
     ignoreFailures = true
@@ -35,7 +35,7 @@ dependencies {
   tasks.withType(Checkstyle) {
     reports {
       html.enabled = true
-=======
+
  	checkstyle {
      //Keep checkstyle a little quieter
     ignoreFailures = true
@@ -45,7 +45,7 @@ dependencies {
   tasks.withType(Checkstyle) {
     reports {
      html.enabled = true
->>>>>>> Review
+
       xml.enabled = false
     }
   }
