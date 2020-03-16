@@ -1,10 +1,10 @@
  plugins {
      id "com.github.spotbugs" version "3.0.0"
-<<<<<<< HEAD
+
      id "checkstyle"
-=======
+
     id "checkstyle"
->>>>>>> StaticAnalysis
+
  }
 
 apply plugin: 'application'
@@ -34,7 +34,7 @@ test {
 // Configure Checkstyle
 /////////////////////////////////////////////////////////////////////
   apply plugin: 'checkstyle'
-<<<<<<< HEAD
+
 
   checkstyle {
  //   // Keep checkstyle a little quieter
@@ -48,22 +48,22 @@ test {
 
  	checkstyle {
      //Keep checkstyle a little quieter
-=======
+
   checkstyle {
     // Keep checkstyle a little quieter
->>>>>>> StaticAnalysis
+
     ignoreFailures = true
     showViolations = false
   }
 
   tasks.withType(Checkstyle) {
     reports {
-<<<<<<< HEAD
+
      html.enabled = true
 
-=======
+
       html.enabled = true
->>>>>>> StaticAnalysis
+
       xml.enabled = false
     }
   }
@@ -80,9 +80,8 @@ test {
     reports {
       xml.enabled = false
       html.enabled = true
-<<<<<<< HEAD
+
     }
-=======
+
    }
->>>>>>> StaticAnalysis
-  }
+
