@@ -28,26 +28,67 @@ public class Cart {
      * @throws UnderAgeException
      */
     public double calcCost() throws UnderAgeException {
-        return 0; //implement me, will be important for assignment 4 (nothing to do here for assignment 3)
+        double price = 0.0;
+        double tax = 0.0;
+        double finalTotal = 0.0;
+
+        int produce = 0;
+        int alcohol = 0;
+        int frozenFood = 0;
+
+        for (int i = 0; i < cart.size(); i++) {
+            if (cart.get(i).getClass() == Produce.class) {
+                produce++;
+
+                if (produce >= 3) {
+                    price -= 1;
+                    produce = 0;
+                }
+            }
+
+            else if (cart.get(i).getClass() == Alcohol.class) {
+                alcohol++;
+            }
+
+            else if (cart.get(i).getClass() == FrozenFood.class) {
+                frozenFood++;
+            }
+
+            if (alcohol >= 1 && frozenFood >= 1) {
+                price -= 3;
+                alcohol--;
+                frozenFood--;
+            }
+
+        price += cart.get(i).getCost();    		
+        }
+        tax = getTax(price, "AZ");
+        finalTotal = tax + price;
+
+        return finalTotal; //implement me, will be important for assignment 4 (nothing to do here for assignment 3)
     }
 
     // calculates how much was saved in the current shopping cart based on the deals, returns the saved amount
     // throws exception if alcohol is bought from underage person
-    // TODO: Create node graph for this method in assign 4: create white box tests and fix the method, reach at least 98% coverage
+    // TODO: Create node graph for this method in assign 4: create white box tests and fix the method
+    // reach at least 98% coverage
     public int amountSaved() throws UnderAgeException {
         int subTotal = 0;
         int costAfterSavings = 0;
 
         double produce_counter = 0;
         int alcoholCounter = 0;
-        int frozenFoodCounter = 0;
+        int frozenFoodCounter = 0; 
         int dairyCounter = 0;
 
-        for(int i = 0; i < cart.size(); i++) {
+        for (int i = 0; i < cart.size(); i++) {
             subTotal += cart.get(i).getCost();
-            costAfterSavings =costAfterSavings+cart.get(i).getCost();
+            costAfterSavings = costAfterSavings + cart.get(i).getCost();
 
-            if (cart.get(i).getClass().toString() == Produce.class.toString()) {
+            //SER316-START 
+            //Changed equality signs to .equals to compare Strings
+            if (cart.get(i).getClass().toString().equals(Produce.class.toString())) {
+                //SER316-END
                 produce_counter++;
 
                 if (produce_counter >= 3) {
@@ -55,20 +96,38 @@ public class Cart {
                     produce_counter = 0;
                 }
             }
-            else if (cart.get(i).getClass().toString()==Alcohol.class.toString()) {
+            //SER316-START 
+            //Changed equality signs to .equals to compare Strings
+            else if (cart.get(i).getClass().toString().equals(Alcohol.class.toString())) {
+                //SER316-END
                 alcoholCounter++;
                 if (userAge < 21) {
                     throw new UnderAgeException("The User is not of age to purchase alcohol!");
                 }
             }
-            else if (cart.get(i).getClass().toString() == FrozenFood.class.toString()) {
+
+            //SER316-START 
+            //Changed equality signs to .equals to compare Strings
+            else if (cart.get(i).getClass().toString().equals(FrozenFood.class.toString())) {
+                //SER316-END    
+                frozenFoodCounter++;
+            }
+            //SER316-START 
+            //Commented out duplicate code and dairycounter
+            //else if (cart.get(i).getClass().toString().equals(FrozenFood.class.toString()))  
+            //dairyCounter++;
+            //SER316-END  
+            
+            //SER316 TASK 2 SPOTBUG FIX
+            else if (cart.get(i).getClass().toString().equals(FrozenFood.class.toString())) {
                 frozenFoodCounter++;
             }   
 
+
             if (alcoholCounter >= 1 && frozenFoodCounter >= 1) {
-                 costAfterSavings = costAfterSavings + 3;
-                 alcoholCounter--;
-                 frozenFoodCounter--;
+                costAfterSavings = costAfterSavings + 3;
+                alcoholCounter--;
+                frozenFoodCounter--;
             }
         }
 
@@ -76,38 +135,37 @@ public class Cart {
     }
 
     // Gets the tax based on state and the total
-    public double getTax(double totalBT, String twoLetterUSStateAbbreviation) {
+    public double getTax(double totalBt, String twoLetterUSStateAbbreviation) {
         double newTotal = 0;
         switch (twoLetterUSStateAbbreviation) {
             case "AZ":
-                newTotal = totalBT * .08;
+                newTotal = totalBt * .08;
                 break;
             case "CA":
-                newTotal = totalBT * .09;
+                newTotal = totalBt * .09;
                 break;
             case "NY":
-                newTotal = totalBT * .1;
+                newTotal = totalBt * .1;
             case "CO":
-                newTotal = totalBT * .07;
+                newTotal = totalBt * .07;
                 break;
-            default:
-                return totalBT;
+        default:
+                return totalBt;
         }
         return newTotal;
     }
 
     public void addItem(Product np) {
-      cart.add(np);
+        cart.add(np);
     }
 
-    public boolean RemoveItem(Product productToRemove)
-    {
-    		boolean test = false;
+    public boolean RemoveItem(Product productToRemove) {
+        boolean test = false;
         for (int i = 0; i < cart.size(); i++) {
             if (cart.get(i) == productToRemove) {
-                 cart.remove(i);
-                 test = true;
-                 return test;
+                cart.remove(i);
+                test = true;
+                return test;
             }
         }
         return false;

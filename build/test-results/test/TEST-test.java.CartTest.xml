@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test.java.CartTest" tests="32" skipped="0" failures="0" errors="0" timestamp="2020-03-16T20:17:41" hostname="LAPTOP-SRH1PEK6" time="0.025">
+  <properties/>
+  <testcase name="amountSave4" classname="test.java.CartTest" time="0.003"/>
+  <testcase name="amountSave5" classname="test.java.CartTest" time="0.001"/>
+  <testcase name="amountSave6" classname="test.java.CartTest" time="0.0"/>
+  <testcase name="amountSaved" classname="test.java.CartTest" time="0.0"/>
+  <testcase name="calcCostCart1" classname="test.java.CartTest" time="0.0"/>
+  <testcase name="caclCostCart10" classname="test.java.CartTest" time="0.0"/>
+  <testcase name="caclCostCart11" classname="test.java.CartTest" time="0.001"/>
+  <testcase name="caclCostCart12" classname="test.java.CartTest" time="0.0"/>
+  <testcase name="caclCostCart13" classname="test.java.CartTest" time="0.0"/>
+  <testcase name="caclCostCart15" classname="test.java.CartTest" time="0.0"/>
+  <testcase name="caclCostCart16" classname="test.java.CartTest" time="0.001"/>
+  <testcase name="caclCostCart18" classname="test.java.CartTest" time="0.0"/>
+  <testcase name="calcCostCart14" classname="test.java.CartTest" time="0.0"/>
+  <testcase name="removeItem2" classname="test.java.CartTest" time="0.001"/>
+  <testcase name="removeItem3" classname="test.java.CartTest" time="0.0"/>
+  <testcase name="getAzTax2" classname="test.java.CartTest" time="0.002"/>
+  <testcase name="getCaTax2" classname="test.java.CartTest" time="0.001"/>
+  <testcase name="getCoTax2" classname="test.java.CartTest" time="0.0"/>
+  <testcase name="getDefaultTax" classname="test.java.CartTest" time="0.0"/>
+  <testcase name="getNyTax2" classname="test.java.CartTest" time="0.0"/>
+  <testcase name="amountSaved2" classname="test.java.CartTest" time="0.0"/>
+  <testcase name="amountSaved3" classname="test.java.CartTest" time="0.001"/>
+  <testcase name="caclCostCart2" classname="test.java.CartTest" time="0.0"/>
+  <testcase name="caclCostCart3" classname="test.java.CartTest" time="0.001"/>
+  <testcase name="caclCostCart4" classname="test.java.CartTest" time="0.0"/>
+  <testcase name="caclCostCart8" classname="test.java.CartTest" time="0.0"/>
+  <testcase name="caclCostCart9" classname="test.java.CartTest" time="0.0"/>
+  <testcase name="removeItem" classname="test.java.CartTest" time="0.0"/>
+  <testcase name="getAzTax" classname="test.java.CartTest" time="0.0"/>
+  <testcase name="getCaTax" classname="test.java.CartTest" time="0.0"/>
+  <testcase name="getCoTax" classname="test.java.CartTest" time="0.0"/>
+  <testcase name="getNyTax" classname="test.java.CartTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.0.0" sequence="1" timestamp="1584397949506" analysisTimestamp="1584397948811" release="">
+  <Project projectName="stevenl1-SER316">
+    <Jar>C:\Users\steve\stevenl1-SER316\build\classes\java\main</Jar>
+    <AuxClasspathEntry>C:\Users\steve\stevenl1-SER316\build\classes\java\main</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\steve\.p2\pool\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\steve\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\steve\stevenl1-SER316\cls</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jdk-12.0.2\lib\jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\steve\stevenl1-SER316\src</SrcDir>
+  </Project>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="main.java.Cart">
+      <SourceLine classname="main.java.Cart" sourcefile="Cart.java" sourcepath="main/java/Cart.java"/>
+    </Class>
+    <Method classname="main.java.Cart" name="RemoveItem" signature="(Lmain/java/Product;)Z" isStatic="false">
+      <SourceLine classname="main.java.Cart" start="163" end="171" startBytecode="0" endBytecode="168" sourcefile="Cart.java" sourcepath="main/java/Cart.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="test.java.CartTest">
+      <SourceLine classname="test.java.CartTest" sourcefile="CartTest.java" sourcepath="test/java/CartTest.java"/>
+    </Class>
+    <Field classname="test.java.CartTest" name="cart6" signature="Lmain/java/Cart;" isStatic="false">
+      <SourceLine classname="test.java.CartTest" start="29" end="29" startBytecode="0" endBytecode="0" sourcefile="CartTest.java" sourcepath="test/java/CartTest.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="test.java.CartTest">
+      <SourceLine classname="test.java.CartTest" sourcefile="CartTest.java" sourcepath="test/java/CartTest.java"/>
+    </Class>
+    <Field classname="test.java.CartTest" name="cart6Expected" signature="D" isStatic="false">
+      <SourceLine classname="test.java.CartTest" start="33" end="33" startBytecode="0" endBytecode="0" sourcefile="CartTest.java" sourcepath="test/java/CartTest.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="test.java.CartTest">
+      <SourceLine classname="test.java.CartTest" sourcefile="CartTest.java" sourcepath="test/java/CartTest.java"/>
+    </Class>
+    <Field classname="test.java.CartTest" name="cart7" signature="Lmain/java/Cart;" isStatic="false">
+      <SourceLine classname="test.java.CartTest" start="29" end="29" startBytecode="0" endBytecode="0" sourcefile="CartTest.java" sourcepath="test/java/CartTest.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1">
+    <Class classname="test.java.CartTest">
+      <SourceLine classname="test.java.CartTest" sourcefile="CartTest.java" sourcepath="test/java/CartTest.java"/>
+    </Class>
+    <Field classname="test.java.CartTest" name="cart7Expected" signature="D" isStatic="false">
+      <SourceLine classname="test.java.CartTest" start="33" end="33" startBytecode="0" endBytecode="0" sourcefile="CartTest.java" sourcepath="test/java/CartTest.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="test.java.calcCostTest">
+      <SourceLine classname="test.java.calcCostTest" start="23" end="278" sourcefile="calcCostTest.java" sourcepath="test/java/calcCostTest.java"/>
+    </Class>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Mon, 16 Mar 2020 15:28:34 -0700" total_classes="12" referenced_classes="61" total_bugs="6" total_size="571" num_packages="2" java_version="12.0.2" vm_version="12.0.2+10" cpu_seconds="8.91" clock_seconds="169.38" peak_mbytes="612.00" alloc_mbytes="1024.00" gc_seconds="0.06" priority_2="6">
+    <PackageStats package="main.java" total_bugs="1" total_types="9" total_size="157" priority_2="1">
+      <ClassStats class="main.java.Alcohol" sourceFile="Alcohol.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="main.java.Cart" sourceFile="Cart.java" interface="false" size="89" bugs="1" priority_2="1"/>
+      <ClassStats class="main.java.Dairy" sourceFile="Dairy.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="main.java.FrozenFood" sourceFile="FrozenFood.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="main.java.Main" sourceFile="Main.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="main.java.Meat" sourceFile="Meat.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="main.java.Produce" sourceFile="Produce.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="main.java.Product" sourceFile="Product.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="main.java.UnderAgeException" sourceFile="UnderAgeException.java" interface="false" size="4" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="test.java" total_bugs="5" total_types="3" total_size="414" priority_2="5">
+      <ClassStats class="test.java.CartTest" sourceFile="CartTest.java" interface="false" size="231" bugs="4" priority_2="4"/>
+      <ClassStats class="test.java.WhiteBoxGiven" sourceFile="WhiteBoxGiven.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="test.java.calcCostTest" sourceFile="calcCostTest.java" interface="false" size="171" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="103" invocations="2" avgMicrosecondsPerInvocation="51814" maxMicrosecondsPerInvocation="88536" standardDeviationMicrosecondsPerInvocation="36722"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="99" invocations="614" avgMicrosecondsPerInvocation="162" maxMicrosecondsPerInvocation="2775" standardDeviationMicrosecondsPerInvocation="302"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="52" invocations="618" avgMicrosecondsPerInvocation="84" maxMicrosecondsPerInvocation="403" standardDeviationMicrosecondsPerInvocation="35"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="43" invocations="61" avgMicrosecondsPerInvocation="707" maxMicrosecondsPerInvocation="16185" standardDeviationMicrosecondsPerInvocation="2140"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="31" invocations="61" avgMicrosecondsPerInvocation="514" maxMicrosecondsPerInvocation="4251" standardDeviationMicrosecondsPerInvocation="869"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="29" invocations="283" avgMicrosecondsPerInvocation="105" maxMicrosecondsPerInvocation="4239" standardDeviationMicrosecondsPerInvocation="370"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="20" invocations="78" avgMicrosecondsPerInvocation="262" maxMicrosecondsPerInvocation="5598" standardDeviationMicrosecondsPerInvocation="848"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="19" invocations="78" avgMicrosecondsPerInvocation="252" maxMicrosecondsPerInvocation="7052" standardDeviationMicrosecondsPerInvocation="906"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="19" invocations="78" avgMicrosecondsPerInvocation="248" maxMicrosecondsPerInvocation="3624" standardDeviationMicrosecondsPerInvocation="614"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="18" invocations="78" avgMicrosecondsPerInvocation="239" maxMicrosecondsPerInvocation="3344" standardDeviationMicrosecondsPerInvocation="607"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="17" invocations="573" avgMicrosecondsPerInvocation="30" maxMicrosecondsPerInvocation="614" standardDeviationMicrosecondsPerInvocation="52"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="15" invocations="78" avgMicrosecondsPerInvocation="203" maxMicrosecondsPerInvocation="11979" standardDeviationMicrosecondsPerInvocation="1344"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="13" invocations="78" avgMicrosecondsPerInvocation="167" maxMicrosecondsPerInvocation="2758" standardDeviationMicrosecondsPerInvocation="424"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="12" invocations="61" avgMicrosecondsPerInvocation="201" maxMicrosecondsPerInvocation="1339" standardDeviationMicrosecondsPerInvocation="302"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="12" invocations="75" avgMicrosecondsPerInvocation="160" maxMicrosecondsPerInvocation="2420" standardDeviationMicrosecondsPerInvocation="442"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1584397949506" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>
