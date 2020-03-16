@@ -117,8 +117,9 @@ public class Cart {
             //else if (cart.get(i).getClass().toString().equals(FrozenFood.class.toString()))  
             //dairyCounter++;
             //SER316-END  
-
-            else if (cart.get(i).getClass().toString() == FrozenFood.class.toString()) {
+            
+            //SER316 TASK 2 SPOTBUG FIX
+            else if (cart.get(i).getClass().toString().equals(FrozenFood.class.toString())) {
                 frozenFoodCounter++;
             }   
 
