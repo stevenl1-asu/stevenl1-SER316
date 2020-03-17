@@ -23,15 +23,43 @@ import org.junit.Test;
 public class CartTest {
 
     Cart cart;
-    Product product, product2;
+    Product product; 
+    Product product2;
     Produce prod;
 
-    Cart cart1, cart2, cart3, cart4, cart5, cart6, cart7, cart8, cart9, cart10, cart11, cart12,
-    cart13, cart14, cart15, cart16, cart17, cart18;
+    Cart cart1;
+    Cart cart2;
+    Cart cart3; 
+    Cart cart4; 
+    Cart cart5; 
+    Cart cart6; 
+    Cart cart7; 
+    Cart cart8; 
+    Cart cart9; 
+    Cart cart10; 
+    Cart cart11; 
+    Cart cart12;
+    Cart cart13; 
+    Cart cart14; 
+    Cart cart15; 
+    Cart cart16; 
+    Cart cart17; 
+    Cart cart18;
 
-    double cart1Expected, cart2Expected, cart3Expected, cart4Expected, cart5Expected,
-    cart6Expected, cart7Expected, cart8Expected, cart9Expected, cart10Expected, cart11Expected,
-    cart12Expected, cart13Expected, cart14Expected; 
+    double cart1Expected; 
+    double cart2Expected; 
+    double cart3Expected; 
+    double cart4Expected; 
+    double cart5Expected;
+    double cart6Expected; 
+    double cart7Expected; 
+    double cart8Expected; 
+    double cart9Expected; 
+    double cart10Expected; 
+    double cart11Expected;
+    double cart12Expected;
+    double cart13Expected; 
+    double cart14Expected;  
 
 
     @Before
