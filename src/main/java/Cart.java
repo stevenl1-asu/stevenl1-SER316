@@ -28,7 +28,7 @@ public class Cart {
      * @throws UnderAgeException
      */
     public double calcCost() throws UnderAgeException {
-        double price = 0.0;
+        int price = 0;
         double tax = 0.0;
         double finalTotal = 0.0;
 
@@ -37,24 +37,17 @@ public class Cart {
         int frozenFood = 0;
 
         for (int i = 0; i < cart.size(); i++) {
-            if (cart.get(i).getClass() == Produce.class) {
-                produce++;
-
-                if (produce >= 3) {
-                    price -= 1;
-                    produce = 0;
-                }
-            }
-
-            else if (cart.get(i).getClass() == Alcohol.class) {
+            if (cart.get(i).getClass() == Alcohol.class || cart.get(i).getClass() == FrozenFood.class || cart.get(i).getClass() == Produce.class) {
                 alcohol++;
-            }
-
-            else if (cart.get(i).getClass() == FrozenFood.class) {
                 frozenFood++;
+                produce++;
+            }
+            else if (produce >= 3) {
+                price -= 1;
+                produce = 0;
             }
 
-            if (alcohol >= 1 && frozenFood >= 1) {
+            else if (alcohol >= 1 && frozenFood >= 1) {
                 price -= 3;
                 alcohol--;
                 frozenFood--;
@@ -137,24 +130,35 @@ public class Cart {
     // Gets the tax based on state and the total
     public double getTax(double totalBt, String twoLetterUSStateAbbreviation) {
         double newTotal = 0;
-        switch (twoLetterUSStateAbbreviation) {
-            case "AZ":
-                newTotal = totalBt * .08;
-                break;
-            case "CA":
-                newTotal = totalBt * .09;
-                break;
-            case "NY":
-                newTotal = totalBt * .1;
-            case "CO":
-                newTotal = totalBt * .07;
-                break;
-        default:
-                return totalBt;
+        if(twoLetterUSStateAbbreviation.equals("AZ")) {
+            calcAZ(totalBt);
+        } else if(twoLetterUSStateAbbreviation.equals("CA")) {
+            calcCA(totalBt);
+        } else if(twoLetterUSStateAbbreviation.equals("NY")) {
+            calcNY(totalBt);
+        } else {
+            calcCO(totalBt);
+        
         }
         return newTotal;
     }
-
+    
+    public void calcAZ(double totalBt) {
+        double newTotal = totalBt * .08;
+    }
+    
+    public void calcCA(double totalBt) {
+        double newTotal = totalBt * .09;
+    }
+    
+    public void calcNY(double totalBt) {
+        double newTotal = totalBt * .1;
+    }
+    
+    public void calcCO(double totalBt) {
+        double newTotal = totalBt * .07;
+    }
+    
     public void addItem(Product np) {
         cart.add(np);
     }

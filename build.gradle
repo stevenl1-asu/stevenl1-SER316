@@ -1,7 +1,11 @@
+// plugins {
+//     id "com.github.spotbugs" version "3.0.0"
+//     id "checkstyle"
+// }
+ 
  plugins {
-     id "com.github.spotbugs" version "3.0.0"
-     id "checkstyle"
- }
+    id 'pmd'
+}
 
 apply plugin: 'application'
 apply plugin: 'jacoco'
@@ -21,6 +25,15 @@ dependencies {
     compile files('cls/')
 }
 
+apply plugin: "pmd"
+pmd {
+  ignoreFailures = true 
+  sourceSets = [sourceSets.main]
+  reportsDir = file("$project.buildDir/reports/pmd")
+  ruleSets = []
+  ruleSetConfig = resources.text.fromFile('ruleset.xml')
+}
+
 test {
 	exclude '**/BlackBoxGiven.class'
 
@@ -29,31 +42,31 @@ test {
 ///////////////////////////////////////////////////////////////////////
 // Configure Checkstyle
 /////////////////////////////////////////////////////////////////////
-  apply plugin: 'checkstyle'
-  checkstyle {
+//  apply plugin: 'checkstyle'
+//  checkstyle {
  //   // Keep checkstyle a little quieter
-   ignoreFailures = true
-   showViolations = false
-  }
+ //  ignoreFailures = true
+ //  showViolations = false
+ // }
 
-  tasks.withType(Checkstyle) {
-    reports {
-      html.enabled = true
-     xml.enabled = false
-    }
-  }
-  checkstyle {
-      toolVersion = "8.8"
-  }
+ // tasks.withType(Checkstyle) {
+ //   reports {
+ //     html.enabled = true
+ //    xml.enabled = false
+ //   }
+ // }
+  //checkstyle {
+    //  toolVersion = "8.8"
+  //}
 
 
 /////////////////////////////////////////////////////////////////////////
 // Configure SpotBugs
 /////////////////////////////////////////////////////////////////////////
  // To generate an HTML report instead of XML
-  tasks.withType(com.github.spotbugs.SpotBugsTask) {
-    reports {
-      xml.enabled = false
-    html.enabled = true
-    }
-  }
+ // tasks.withType(com.github.spotbugs.SpotBugsTask) {
+ //   reports {
+ //     xml.enabled = false
+ //   html.enabled = true
+ //   }
+ // }
