@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="test.java.BlackBoxGiven" tests="84" skipped="0" failures="36" errors="0" timestamp="2020-02-11T00:10:03" hostname="LAPTOP-SRH1PEK6" time="0.064">
+<testsuite name="test.java.BlackBoxGiven" tests="84" skipped="0" failures="36" errors="0" timestamp="2020-04-22T21:34:12" hostname="LAPTOP-SRH1PEK6" time="0.062">
   <properties/>
-  <testcase name="calcCostCart1[0]" classname="test.java.BlackBoxGiven" time="0.006">
+  <testcase name="calcCostCart1[0]" classname="test.java.BlackBoxGiven" time="0.007">
     <failure message="java.lang.AssertionError: expected:&lt;70.2&gt; but was:&lt;65.0&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;70.2&gt; but was:&lt;65.0&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -131,8 +131,8 @@
 	at java.base/java.lang.Thread.run(Thread.java:830)
 </failure>
   </testcase>
-  <testcase name="caclCostCart11[0]" classname="test.java.BlackBoxGiven" time="0.008"/>
-  <testcase name="caclCostCart12[0]" classname="test.java.BlackBoxGiven" time="0.0">
+  <testcase name="caclCostCart11[0]" classname="test.java.BlackBoxGiven" time="0.009"/>
+  <testcase name="caclCostCart12[0]" classname="test.java.BlackBoxGiven" time="0.001">
     <failure message="main.java.UnderAgeException: The User is not of age to purchase alcohol!" type="main.java.UnderAgeException">main.java.UnderAgeException: The User is not of age to purchase alcohol!
 	at main.java.Cart0.calcCost(Cart0.java:54)
 	at test.java.BlackBoxGiven.caclCostCart12(BlackBoxGiven.java:272)
@@ -195,7 +195,7 @@
 </failure>
   </testcase>
   <testcase name="caclCostCart13[0]" classname="test.java.BlackBoxGiven" time="0.0"/>
-  <testcase name="caclCostCart14[0]" classname="test.java.BlackBoxGiven" time="0.0">
+  <testcase name="caclCostCart14[0]" classname="test.java.BlackBoxGiven" time="0.001">
     <failure message="java.lang.AssertionError: expected:&lt;27.0&gt; but was:&lt;25.0&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;27.0&gt; but was:&lt;25.0&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -449,7 +449,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:830)
 </failure>
   </testcase>
-  <testcase name="caclCostCart5[0]" classname="test.java.BlackBoxGiven" time="0.001">
+  <testcase name="caclCostCart5[0]" classname="test.java.BlackBoxGiven" time="0.0">
     <failure message="main.java.UnderAgeException: The User is not of age to purchase alcohol!" type="main.java.UnderAgeException">main.java.UnderAgeException: The User is not of age to purchase alcohol!
 	at main.java.Cart0.calcCost(Cart0.java:54)
 	at test.java.BlackBoxGiven.caclCostCart5(BlackBoxGiven.java:230)
@@ -511,8 +511,8 @@
 	at java.base/java.lang.Thread.run(Thread.java:830)
 </failure>
   </testcase>
-  <testcase name="caclCostCart6[0]" classname="test.java.BlackBoxGiven" time="0.0"/>
-  <testcase name="caclCostCart7[0]" classname="test.java.BlackBoxGiven" time="0.001">
+  <testcase name="caclCostCart6[0]" classname="test.java.BlackBoxGiven" time="0.001"/>
+  <testcase name="caclCostCart7[0]" classname="test.java.BlackBoxGiven" time="0.0">
     <failure message="main.java.UnderAgeException: The User is not of age to purchase alcohol!" type="main.java.UnderAgeException">main.java.UnderAgeException: The User is not of age to purchase alcohol!
 	at main.java.Cart0.calcCost(Cart0.java:54)
 	at test.java.BlackBoxGiven.caclCostCart7(BlackBoxGiven.java:242)
@@ -639,7 +639,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:830)
 </failure>
   </testcase>
-  <testcase name="caclCostCart9[0]" classname="test.java.BlackBoxGiven" time="0.0">
+  <testcase name="caclCostCart9[0]" classname="test.java.BlackBoxGiven" time="0.001">
     <failure message="java.lang.AssertionError: expected:&lt;10.8&gt; but was:&lt;10.0&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;10.8&gt; but was:&lt;10.0&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -704,15 +704,15 @@
 	at java.base/java.lang.Thread.run(Thread.java:830)
 </failure>
   </testcase>
-  <testcase name="calcCostCart1[1]" classname="test.java.BlackBoxGiven" time="0.001"/>
-  <testcase name="caclCostCart10[1]" classname="test.java.BlackBoxGiven" time="0.002"/>
+  <testcase name="calcCostCart1[1]" classname="test.java.BlackBoxGiven" time="0.0"/>
+  <testcase name="caclCostCart10[1]" classname="test.java.BlackBoxGiven" time="0.001"/>
   <testcase name="caclCostCart11[1]" classname="test.java.BlackBoxGiven" time="0.0"/>
-  <testcase name="caclCostCart12[1]" classname="test.java.BlackBoxGiven" time="0.001"/>
+  <testcase name="caclCostCart12[1]" classname="test.java.BlackBoxGiven" time="0.0"/>
   <testcase name="caclCostCart13[1]" classname="test.java.BlackBoxGiven" time="0.0"/>
   <testcase name="caclCostCart14[1]" classname="test.java.BlackBoxGiven" time="0.0"/>
   <testcase name="caclCostCart2[1]" classname="test.java.BlackBoxGiven" time="0.0"/>
-  <testcase name="caclCostCart3[1]" classname="test.java.BlackBoxGiven" time="0.0"/>
-  <testcase name="caclCostCart4[1]" classname="test.java.BlackBoxGiven" time="0.001"/>
+  <testcase name="caclCostCart3[1]" classname="test.java.BlackBoxGiven" time="0.001"/>
+  <testcase name="caclCostCart4[1]" classname="test.java.BlackBoxGiven" time="0.0"/>
   <testcase name="caclCostCart5[1]" classname="test.java.BlackBoxGiven" time="0.0">
     <failure message="main.java.UnderAgeException: The User is not of age to purchase alcohol!" type="main.java.UnderAgeException">main.java.UnderAgeException: The User is not of age to purchase alcohol!
 	at main.java.Cart1.calcCost(Cart1.java:46)
@@ -840,7 +840,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:830)
 </failure>
   </testcase>
-  <testcase name="caclCostCart7[1]" classname="test.java.BlackBoxGiven" time="0.0">
+  <testcase name="caclCostCart7[1]" classname="test.java.BlackBoxGiven" time="0.001">
     <failure message="java.lang.AssertionError: expected:&lt;16.2&gt; but was:&lt;17.28&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;16.2&gt; but was:&lt;17.28&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -907,7 +907,7 @@
   </testcase>
   <testcase name="caclCostCart8[1]" classname="test.java.BlackBoxGiven" time="0.0"/>
   <testcase name="caclCostCart9[1]" classname="test.java.BlackBoxGiven" time="0.0"/>
-  <testcase name="calcCostCart1[2]" classname="test.java.BlackBoxGiven" time="0.001">
+  <testcase name="calcCostCart1[2]" classname="test.java.BlackBoxGiven" time="0.0">
     <failure message="java.lang.AssertionError: expected:&lt;70.2&gt; but was:&lt;65.88&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;70.2&gt; but was:&lt;65.88&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -972,8 +972,8 @@
 	at java.base/java.lang.Thread.run(Thread.java:830)
 </failure>
   </testcase>
-  <testcase name="caclCostCart10[2]" classname="test.java.BlackBoxGiven" time="0.001"/>
-  <testcase name="caclCostCart11[2]" classname="test.java.BlackBoxGiven" time="0.001">
+  <testcase name="caclCostCart10[2]" classname="test.java.BlackBoxGiven" time="0.0"/>
+  <testcase name="caclCostCart11[2]" classname="test.java.BlackBoxGiven" time="0.0">
     <failure message="main.java.UnderAgeException: The User is not of age to purchase alcohol!" type="main.java.UnderAgeException">main.java.UnderAgeException: The User is not of age to purchase alcohol!
 	at main.java.Cart2.calcCost(Cart2.java:62)
 	at test.java.BlackBoxGiven.caclCostCart11(BlackBoxGiven.java:266)
@@ -1035,7 +1035,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:830)
 </failure>
   </testcase>
-  <testcase name="caclCostCart12[2]" classname="test.java.BlackBoxGiven" time="0.001">
+  <testcase name="caclCostCart12[2]" classname="test.java.BlackBoxGiven" time="0.0">
     <failure message="java.lang.AssertionError: expected:&lt;8.64&gt; but was:&lt;0.0&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;8.64&gt; but was:&lt;0.0&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -1101,7 +1101,7 @@
 </failure>
   </testcase>
   <testcase name="caclCostCart13[2]" classname="test.java.BlackBoxGiven" time="0.0"/>
-  <testcase name="caclCostCart14[2]" classname="test.java.BlackBoxGiven" time="0.001">
+  <testcase name="caclCostCart14[2]" classname="test.java.BlackBoxGiven" time="0.0">
     <failure message="java.lang.AssertionError: expected:&lt;27.0&gt; but was:&lt;25.92&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;27.0&gt; but was:&lt;25.92&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -1166,7 +1166,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:830)
 </failure>
   </testcase>
-  <testcase name="caclCostCart2[2]" classname="test.java.BlackBoxGiven" time="0.001">
+  <testcase name="caclCostCart2[2]" classname="test.java.BlackBoxGiven" time="0.0">
     <failure message="java.lang.AssertionError: expected:&lt;8.64&gt; but was:&lt;0.0&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;8.64&gt; but was:&lt;0.0&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -1360,7 +1360,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:830)
 </failure>
   </testcase>
-  <testcase name="caclCostCart7[2]" classname="test.java.BlackBoxGiven" time="0.0">
+  <testcase name="caclCostCart7[2]" classname="test.java.BlackBoxGiven" time="0.001">
     <failure message="java.lang.AssertionError: expected:&lt;16.2&gt; but was:&lt;17.28&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;16.2&gt; but was:&lt;17.28&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -1426,7 +1426,7 @@
 </failure>
   </testcase>
   <testcase name="caclCostCart8[2]" classname="test.java.BlackBoxGiven" time="0.0"/>
-  <testcase name="caclCostCart9[2]" classname="test.java.BlackBoxGiven" time="0.0">
+  <testcase name="caclCostCart9[2]" classname="test.java.BlackBoxGiven" time="0.001">
     <failure message="java.lang.AssertionError: expected:&lt;10.8&gt; but was:&lt;9.72&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;10.8&gt; but was:&lt;9.72&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -1491,10 +1491,10 @@
 	at java.base/java.lang.Thread.run(Thread.java:830)
 </failure>
   </testcase>
-  <testcase name="calcCostCart1[3]" classname="test.java.BlackBoxGiven" time="0.001"/>
-  <testcase name="caclCostCart10[3]" classname="test.java.BlackBoxGiven" time="0.001"/>
+  <testcase name="calcCostCart1[3]" classname="test.java.BlackBoxGiven" time="0.0"/>
+  <testcase name="caclCostCart10[3]" classname="test.java.BlackBoxGiven" time="0.002"/>
   <testcase name="caclCostCart11[3]" classname="test.java.BlackBoxGiven" time="0.0"/>
-  <testcase name="caclCostCart12[3]" classname="test.java.BlackBoxGiven" time="0.001">
+  <testcase name="caclCostCart12[3]" classname="test.java.BlackBoxGiven" time="0.0">
     <failure message="main.java.UnderAgeException: The User is not of age to purchase alcohol!" type="main.java.UnderAgeException">main.java.UnderAgeException: The User is not of age to purchase alcohol!
 	at main.java.Cart3.calcCost(Cart3.java:46)
 	at test.java.BlackBoxGiven.caclCostCart12(BlackBoxGiven.java:272)
@@ -1557,7 +1557,7 @@
 </failure>
   </testcase>
   <testcase name="caclCostCart13[3]" classname="test.java.BlackBoxGiven" time="0.0"/>
-  <testcase name="caclCostCart14[3]" classname="test.java.BlackBoxGiven" time="0.001">
+  <testcase name="caclCostCart14[3]" classname="test.java.BlackBoxGiven" time="0.0">
     <failure message="java.lang.AssertionError: expected:&lt;27.0&gt; but was:&lt;30.240000000000002&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;27.0&gt; but was:&lt;30.240000000000002&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -1684,7 +1684,7 @@
 	at java.base/java.lang.Thread.run(Thread.java:830)
 </failure>
   </testcase>
-  <testcase name="caclCostCart3[3]" classname="test.java.BlackBoxGiven" time="0.0">
+  <testcase name="caclCostCart3[3]" classname="test.java.BlackBoxGiven" time="0.001">
     <failure message="java.lang.AssertionError: expected:&lt;49.68&gt; but was:&lt;59.4&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;49.68&gt; but was:&lt;59.4&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -1750,7 +1750,7 @@
 </failure>
   </testcase>
   <testcase name="caclCostCart4[3]" classname="test.java.BlackBoxGiven" time="0.0"/>
-  <testcase name="caclCostCart5[3]" classname="test.java.BlackBoxGiven" time="0.0">
+  <testcase name="caclCostCart5[3]" classname="test.java.BlackBoxGiven" time="0.001">
     <failure message="main.java.UnderAgeException: The User is not of age to purchase alcohol!" type="main.java.UnderAgeException">main.java.UnderAgeException: The User is not of age to purchase alcohol!
 	at main.java.Cart3.calcCost(Cart3.java:46)
 	at test.java.BlackBoxGiven.caclCostCart5(BlackBoxGiven.java:230)
@@ -1812,8 +1812,8 @@
 	at java.base/java.lang.Thread.run(Thread.java:830)
 </failure>
   </testcase>
-  <testcase name="caclCostCart6[3]" classname="test.java.BlackBoxGiven" time="0.001"/>
-  <testcase name="caclCostCart7[3]" classname="test.java.BlackBoxGiven" time="0.0">
+  <testcase name="caclCostCart6[3]" classname="test.java.BlackBoxGiven" time="0.0"/>
+  <testcase name="caclCostCart7[3]" classname="test.java.BlackBoxGiven" time="0.001">
     <failure message="java.lang.AssertionError: expected:&lt;16.2&gt; but was:&lt;19.44&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;16.2&gt; but was:&lt;19.44&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -1879,10 +1879,10 @@
 </failure>
   </testcase>
   <testcase name="caclCostCart8[3]" classname="test.java.BlackBoxGiven" time="0.0"/>
-  <testcase name="caclCostCart9[3]" classname="test.java.BlackBoxGiven" time="0.0"/>
+  <testcase name="caclCostCart9[3]" classname="test.java.BlackBoxGiven" time="0.001"/>
   <testcase name="calcCostCart1[4]" classname="test.java.BlackBoxGiven" time="0.0"/>
   <testcase name="caclCostCart10[4]" classname="test.java.BlackBoxGiven" time="0.001"/>
-  <testcase name="caclCostCart11[4]" classname="test.java.BlackBoxGiven" time="0.0"/>
+  <testcase name="caclCostCart11[4]" classname="test.java.BlackBoxGiven" time="0.001"/>
   <testcase name="caclCostCart12[4]" classname="test.java.BlackBoxGiven" time="0.0">
     <failure message="main.java.UnderAgeException: The User is not of age to purchase alcohol!" type="main.java.UnderAgeException">main.java.UnderAgeException: The User is not of age to purchase alcohol!
 	at main.java.Cart4.calcCost(Cart4.java:42)
@@ -2011,7 +2011,7 @@
   </testcase>
   <testcase name="caclCostCart3[4]" classname="test.java.BlackBoxGiven" time="0.001"/>
   <testcase name="caclCostCart4[4]" classname="test.java.BlackBoxGiven" time="0.0"/>
-  <testcase name="caclCostCart5[4]" classname="test.java.BlackBoxGiven" time="0.001">
+  <testcase name="caclCostCart5[4]" classname="test.java.BlackBoxGiven" time="0.0">
     <failure message="main.java.UnderAgeException: The User is not of age to purchase alcohol!" type="main.java.UnderAgeException">main.java.UnderAgeException: The User is not of age to purchase alcohol!
 	at main.java.Cart4.calcCost(Cart4.java:42)
 	at test.java.BlackBoxGiven.caclCostCart5(BlackBoxGiven.java:230)
@@ -2077,10 +2077,10 @@
   <testcase name="caclCostCart7[4]" classname="test.java.BlackBoxGiven" time="0.0"/>
   <testcase name="caclCostCart8[4]" classname="test.java.BlackBoxGiven" time="0.0"/>
   <testcase name="caclCostCart9[4]" classname="test.java.BlackBoxGiven" time="0.0"/>
-  <testcase name="calcCostCart1[5]" classname="test.java.BlackBoxGiven" time="0.0"/>
-  <testcase name="caclCostCart10[5]" classname="test.java.BlackBoxGiven" time="0.001"/>
-  <testcase name="caclCostCart11[5]" classname="test.java.BlackBoxGiven" time="0.001"/>
-  <testcase name="caclCostCart12[5]" classname="test.java.BlackBoxGiven" time="0.0">
+  <testcase name="calcCostCart1[5]" classname="test.java.BlackBoxGiven" time="0.001"/>
+  <testcase name="caclCostCart10[5]" classname="test.java.BlackBoxGiven" time="0.0"/>
+  <testcase name="caclCostCart11[5]" classname="test.java.BlackBoxGiven" time="0.0"/>
+  <testcase name="caclCostCart12[5]" classname="test.java.BlackBoxGiven" time="0.001">
     <failure message="java.lang.AssertionError: expected:&lt;8.64&gt; but was:&lt;0.0&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;8.64&gt; but was:&lt;0.0&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -2145,9 +2145,9 @@
 	at java.base/java.lang.Thread.run(Thread.java:830)
 </failure>
   </testcase>
-  <testcase name="caclCostCart13[5]" classname="test.java.BlackBoxGiven" time="0.001"/>
+  <testcase name="caclCostCart13[5]" classname="test.java.BlackBoxGiven" time="0.0"/>
   <testcase name="caclCostCart14[5]" classname="test.java.BlackBoxGiven" time="0.0"/>
-  <testcase name="caclCostCart2[5]" classname="test.java.BlackBoxGiven" time="0.001">
+  <testcase name="caclCostCart2[5]" classname="test.java.BlackBoxGiven" time="0.0">
     <failure message="java.lang.AssertionError: expected:&lt;8.64&gt; but was:&lt;0.0&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;8.64&gt; but was:&lt;0.0&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -2212,9 +2212,9 @@
 	at java.base/java.lang.Thread.run(Thread.java:830)
 </failure>
   </testcase>
-  <testcase name="caclCostCart3[5]" classname="test.java.BlackBoxGiven" time="0.0"/>
-  <testcase name="caclCostCart4[5]" classname="test.java.BlackBoxGiven" time="0.001"/>
-  <testcase name="caclCostCart5[5]" classname="test.java.BlackBoxGiven" time="0.0">
+  <testcase name="caclCostCart3[5]" classname="test.java.BlackBoxGiven" time="0.001"/>
+  <testcase name="caclCostCart4[5]" classname="test.java.BlackBoxGiven" time="0.0"/>
+  <testcase name="caclCostCart5[5]" classname="test.java.BlackBoxGiven" time="0.001">
     <failure message="java.lang.AssertionError: expected:&lt;8.64&gt; but was:&lt;0.0&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;8.64&gt; but was:&lt;0.0&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -2280,7 +2280,7 @@
 </failure>
   </testcase>
   <testcase name="caclCostCart6[5]" classname="test.java.BlackBoxGiven" time="0.0"/>
-  <testcase name="caclCostCart7[5]" classname="test.java.BlackBoxGiven" time="0.0">
+  <testcase name="caclCostCart7[5]" classname="test.java.BlackBoxGiven" time="0.001">
     <failure message="java.lang.AssertionError: expected:&lt;16.2&gt; but was:&lt;17.28&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;16.2&gt; but was:&lt;17.28&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
