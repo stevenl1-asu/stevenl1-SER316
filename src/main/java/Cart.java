@@ -28,7 +28,7 @@ public class Cart {
      * @throws UnderAgeException
      */
     public double calcCost() throws UnderAgeException {
-        int price = 0;
+        double price = 0.0;
         double tax = 0.0;
         double finalTotal = 0.0;
 
@@ -80,30 +80,19 @@ public class Cart {
 
             //SER316-START 
             //Changed equality signs to .equals to compare Strings
-            if (cart.get(i).getClass().toString().equals(Produce.class.toString())) {
+            if (cart.get(i).getClass().toString().equals(Produce.class.toString()) || cart.get(i).getClass().toString().equals(Alcohol.class.toString())
+                    || cart.get(i).getClass().toString().equals(FrozenFood.class.toString())) {
                 //SER316-END
                 produce_counter++;
+                alcoholCounter++;
+                frozenFoodCounter++;
 
                 if (produce_counter >= 3) {
                     costAfterSavings -= 1;
                     produce_counter = 0;
-                }
-            }
-            //SER316-START 
-            //Changed equality signs to .equals to compare Strings
-            else if (cart.get(i).getClass().toString().equals(Alcohol.class.toString())) {
-                //SER316-END
-                alcoholCounter++;
-                if (userAge < 21) {
+                } else if (userAge < 21) {
                     throw new UnderAgeException("The User is not of age to purchase alcohol!");
-                }
-            }
-
-            //SER316-START 
-            //Changed equality signs to .equals to compare Strings
-            else if (cart.get(i).getClass().toString().equals(FrozenFood.class.toString())) {
-                //SER316-END    
-                frozenFoodCounter++;
+                }    
             }
             //SER316-START 
             //Commented out duplicate code and dairycounter
@@ -112,10 +101,6 @@ public class Cart {
             //SER316-END  
             
             //SER316 TASK 2 SPOTBUG FIX
-            else if (cart.get(i).getClass().toString().equals(FrozenFood.class.toString())) {
-                frozenFoodCounter++;
-            }   
-
 
             if (alcoholCounter >= 1 && frozenFoodCounter >= 1) {
                 costAfterSavings = costAfterSavings + 3;
