@@ -55,6 +55,7 @@ public class calcCostTest {
     Cart cart12;
     Cart cart13; 
     Cart cart14; 
+    Cart cart15;
 
     double cart1Expected, cart2Expected, cart3Expected, cart4Expected, cart5Expected, 
     cart6Expected, cart7Expected, cart8Expected, cart9Expected, cart10Expected, cart11Expected,
